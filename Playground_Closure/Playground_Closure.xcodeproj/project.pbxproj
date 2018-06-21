@@ -15,6 +15,16 @@
 		8D61A85620D0473A00BBA241 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D61A85420D0473A00BBA241 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C70CD99D20DBAA9900B741B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C70CD99920DBAA9900B741B9 /* Playground_Enum_Class_Struct.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C7783D0B20D3E20A00A68853;
+			remoteInfo = Playground_Enum_Class_Struct;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		8D61A84520D0473900BBA241 /* Playground_Closure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground_Closure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D61A84820D0473900BBA241 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,7 @@
 		8D61A85220D0473A00BBA241 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D61A85520D0473A00BBA241 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D61A85720D0473A00BBA241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C70CD99920DBAA9900B741B9 /* Playground_Enum_Class_Struct.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Playground_Enum_Class_Struct.xcodeproj; path = ../Playground_Enum_Class_Struct/Playground_Enum_Class_Struct.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +51,7 @@
 		8D61A83C20D0473900BBA241 = {
 			isa = PBXGroup;
 			children = (
+				C70CD99920DBAA9900B741B9 /* Playground_Enum_Class_Struct.xcodeproj */,
 				8D61A84720D0473900BBA241 /* Playground_Closure */,
 				8D61A84620D0473900BBA241 /* Products */,
 			);
@@ -65,6 +77,14 @@
 				8D61A84F20D0473900BBA241 /* Playground_Closure.xcdatamodeld */,
 			);
 			path = Playground_Closure;
+			sourceTree = "<group>";
+		};
+		C70CD99A20DBAA9900B741B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C70CD99E20DBAA9900B741B9 /* Playground_Enum_Class_Struct.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,12 +133,28 @@
 			mainGroup = 8D61A83C20D0473900BBA241;
 			productRefGroup = 8D61A84620D0473900BBA241 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C70CD99A20DBAA9900B741B9 /* Products */;
+					ProjectRef = C70CD99920DBAA9900B741B9 /* Playground_Enum_Class_Struct.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8D61A84420D0473900BBA241 /* Playground_Closure */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C70CD99E20DBAA9900B741B9 /* Playground_Enum_Class_Struct.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Playground_Enum_Class_Struct.app;
+			remoteRef = C70CD99D20DBAA9900B741B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8D61A84320D0473900BBA241 /* Resources */ = {
