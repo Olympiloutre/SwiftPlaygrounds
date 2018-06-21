@@ -12,6 +12,12 @@
  
  This playground is about how to correctly use enums
  
+ The objective of this tutorial is to:
+ 
+ Give you some experience using enums, structs and classes.
+ Gain some intuition about when to use them.
+ Give you an understanding of how each works.
+ 
  */
 
 

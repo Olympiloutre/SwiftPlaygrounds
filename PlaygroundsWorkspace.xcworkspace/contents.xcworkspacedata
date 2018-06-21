@@ -8,7 +8,7 @@
       location = "group:Playground_Arc_Memory_Management/../Playground_Embedded_Segue/Playground_Embedded_Segue.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Playground_Enum/Playground_Enum.xcodeproj">
+      location = "group:/Users/rbrochart/Documents/My Swift Playgrounds/Playground_Enum/Playground_Enum_Class_Struct.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Playground_Equatables/Playground_Equatables.xcodeproj">

@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C7783D0B20D3E20A00A68853 /* Playground_Enum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground_Enum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7783D0B20D3E20A00A68853 /* Playground_Enum_Class_Struct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground_Enum_Class_Struct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7783D0E20D3E20A00A68853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7783D1020D3E20A00A68853 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C7783D1320D3E20A00A68853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		C7783D0220D3E20A00A68853 = {
 			isa = PBXGroup;
 			children = (
-				C7783D0D20D3E20A00A68853 /* Playground_Enum */,
+				C7783D0D20D3E20A00A68853 /* Playground_Enum_Class_Struct */,
 				C7783D0C20D3E20A00A68853 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +46,12 @@
 		C7783D0C20D3E20A00A68853 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C7783D0B20D3E20A00A68853 /* Playground_Enum.app */,
+				C7783D0B20D3E20A00A68853 /* Playground_Enum_Class_Struct.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C7783D0D20D3E20A00A68853 /* Playground_Enum */ = {
+		C7783D0D20D3E20A00A68853 /* Playground_Enum_Class_Struct */ = {
 			isa = PBXGroup;
 			children = (
 				C7783D0E20D3E20A00A68853 /* AppDelegate.swift */,
@@ -61,15 +61,15 @@
 				C7783D1720D3E21F00A68853 /* LaunchScreen.storyboard */,
 				C7783D1A20D3E21F00A68853 /* Info.plist */,
 			);
-			path = Playground_Enum;
+			path = Playground_Enum_Class_Struct;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C7783D0A20D3E20A00A68853 /* Playground_Enum */ = {
+		C7783D0A20D3E20A00A68853 /* Playground_Enum_Class_Struct */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C7783D1D20D3E21F00A68853 /* Build configuration list for PBXNativeTarget "Playground_Enum" */;
+			buildConfigurationList = C7783D1D20D3E21F00A68853 /* Build configuration list for PBXNativeTarget "Playground_Enum_Class_Struct" */;
 			buildPhases = (
 				C7783D0720D3E20A00A68853 /* Sources */,
 				C7783D0820D3E20A00A68853 /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = Playground_Enum;
+			name = Playground_Enum_Class_Struct;
 			productName = Playground_Enum;
-			productReference = C7783D0B20D3E20A00A68853 /* Playground_Enum.app */;
+			productReference = C7783D0B20D3E20A00A68853 /* Playground_Enum_Class_Struct.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +99,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C7783D0620D3E20A00A68853 /* Build configuration list for PBXProject "Playground_Enum" */;
+			buildConfigurationList = C7783D0620D3E20A00A68853 /* Build configuration list for PBXProject "Playground_Enum_Class_Struct" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C7783D0A20D3E20A00A68853 /* Playground_Enum */,
+				C7783D0A20D3E20A00A68853 /* Playground_Enum_Class_Struct */,
 			);
 		};
 /* End PBXProject section */
@@ -315,7 +315,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C7783D0620D3E20A00A68853 /* Build configuration list for PBXProject "Playground_Enum" */ = {
+		C7783D0620D3E20A00A68853 /* Build configuration list for PBXProject "Playground_Enum_Class_Struct" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C7783D1B20D3E21F00A68853 /* Debug */,
@@ -324,7 +324,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C7783D1D20D3E21F00A68853 /* Build configuration list for PBXNativeTarget "Playground_Enum" */ = {
+		C7783D1D20D3E21F00A68853 /* Build configuration list for PBXNativeTarget "Playground_Enum_Class_Struct" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C7783D1E20D3E21F00A68853 /* Debug */,
