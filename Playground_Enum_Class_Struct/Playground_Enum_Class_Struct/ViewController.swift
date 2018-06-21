@@ -8,15 +8,36 @@
 /*
                     ENUMERATIONS
  
- Source : https://www.raywenderlich.com/119881/enums-structs-and-classes-in-swift
+ Sources :
+ - https://www.raywenderlich.com/119881/enums-structs-and-classes-in-swift
+ - https://medium.com/@abhimuralidharan/enums-in-swift-9d792b728835
  
- This playground is about how to correctly use enums
  
  The objective of this tutorial is to:
  
  Give you some experience using enums, structs and classes.
  Gain some intuition about when to use them.
  Give you an understanding of how each works.
+ 
+ 
+ 
+ 
+                               SWIFT TYPE SYSTEM
+
+                                     TYPES
+                                 ↙          ↘
+                        NAMED                  COMPOUND
+                  ↙    ↓    ↓   ↘                   ↙     ↘
+           protocol struct enum class             tuples function
+                    |---------------|
+                      model types
+ 
+ 
+     
+       I. ENUMS
+      II. STRUCT
+     III. CLASS
+     
  
  */
 
@@ -30,8 +51,42 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // MARK:- I. ENUMS
+        // -> go to ExampleEnums
+        print("--- Simple Color Named ---")
+        print(SimpleColorName.black)            // > "black"
+        print(SimpleColorName.black.hashValue)  // > 0
+        
+        print("--- Simple Color Int ---")
+        print(SimpleColorInt.black)           // > "black"
+        print(SimpleColorInt.black.hashValue) // > 0
+        print(SimpleColorInt.black.rawValue)  // > 100
+        print(SimpleColorInt.black.description()) // > "(func) rawValue = 100 | hashValue = 0"
+        print(SimpleColorInt.black.desc)          // >  "(var) rawValue = 100 | hashValue = 0"
+        
+        print("--- AssociatedValues Enums---")
+        print(SimpleAssociatedValueEnum.associatedInt(5))            // > "associatedInt(5)"
+        print(SimpleAssociatedValueEnum.associatedInt(5).desc)       // > (Associated Int) 5
+        print(SimpleAssociatedValueEnum.associatedDouble(6.0).desc)  // > (Associated Double) 6.0
+        print(SimpleAssociatedValueEnum.associatedString("7s").desc) // > (Associated String) 7s
+        
+        print("--- MyColor Example ---")
+        print(MyColors.rgb(125,100,88).toHEX)   // > "#7d6458"
+        
+        print("--- Multiple result types Example ---")
+        print(MyMathLib.squareRoot(4).desc) // "The result of the operation is 2.0"
+        print(MyMathLib.squareRoot(-1).desc) // "An error occured while computing operation : Cannot calculate the squareRoot of a non-positive double"
+        
+        print("--- My Option Example ---")
+        print(MyOptional.some(Double(6)).desc)
+        // cannot write 'MyOptional.none.desc' -> we have to set the Generic Type
+        print(MyOptional<Double>.none.desc)
 
     }
 
 }
+
+
+
 

@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70CD9A020DBD39C00B741B9 /* ExampleEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CD99F20DBD39C00B741B9 /* ExampleEnums.swift */; };
 		C7783D0F20D3E20A00A68853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7783D0E20D3E20A00A68853 /* AppDelegate.swift */; };
 		C7783D1120D3E20A00A68853 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7783D1020D3E20A00A68853 /* ViewController.swift */; };
 		C7783D1420D3E20A00A68853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7783D1220D3E20A00A68853 /* Main.storyboard */; };
 		C7783D1620D3E21F00A68853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7783D1520D3E21F00A68853 /* Assets.xcassets */; };
 		C7783D1920D3E21F00A68853 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7783D1720D3E21F00A68853 /* LaunchScreen.storyboard */; };
+		C79A33D020DBEFFB00D5E38F /* ExampleStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79A33CF20DBEFFB00D5E38F /* ExampleStruct.swift */; };
+		C79A33D220DBF00500D5E38F /* ExampleClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79A33D120DBF00500D5E38F /* ExampleClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C70CD99F20DBD39C00B741B9 /* ExampleEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleEnums.swift; sourceTree = "<group>"; };
 		C7783D0B20D3E20A00A68853 /* Playground_Enum_Class_Struct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground_Enum_Class_Struct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7783D0E20D3E20A00A68853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7783D1020D3E20A00A68853 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		C7783D1520D3E21F00A68853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7783D1820D3E21F00A68853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7783D1A20D3E21F00A68853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C79A33CF20DBEFFB00D5E38F /* ExampleStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleStruct.swift; sourceTree = "<group>"; };
+		C79A33D120DBF00500D5E38F /* ExampleClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 			children = (
 				C7783D0E20D3E20A00A68853 /* AppDelegate.swift */,
 				C7783D1020D3E20A00A68853 /* ViewController.swift */,
+				C70CD99F20DBD39C00B741B9 /* ExampleEnums.swift */,
+				C79A33CF20DBEFFB00D5E38F /* ExampleStruct.swift */,
+				C79A33D120DBF00500D5E38F /* ExampleClass.swift */,
 				C7783D1220D3E20A00A68853 /* Main.storyboard */,
 				C7783D1520D3E21F00A68853 /* Assets.xcassets */,
 				C7783D1720D3E21F00A68853 /* LaunchScreen.storyboard */,
@@ -136,7 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7783D1120D3E20A00A68853 /* ViewController.swift in Sources */,
+				C70CD9A020DBD39C00B741B9 /* ExampleEnums.swift in Sources */,
 				C7783D0F20D3E20A00A68853 /* AppDelegate.swift in Sources */,
+				C79A33D020DBEFFB00D5E38F /* ExampleStruct.swift in Sources */,
+				C79A33D220DBF00500D5E38F /* ExampleClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +294,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y949AG79NM;
-				INFOPLIST_FILE = Playground_Enum/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Playground_Enum_Class_Struct/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y949AG79NM;
-				INFOPLIST_FILE = Playground_Enum/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Playground_Enum_Class_Struct/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
