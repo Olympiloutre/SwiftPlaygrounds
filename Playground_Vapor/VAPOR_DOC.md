@@ -13,7 +13,9 @@ _( https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet )_
 ### TODO
 ~~http://swiftontheside.com/2016/12/29/simple-rest-api-in-swift-with-vapor/~~ **TOO OLD**
 
-https://github.com/fgulan/vapor-example ? 
+https://docs.vapor.codes/3.0/getting-started/spm/
+
+https://github.com/fgulan/vapor-example ?  ( REST EXAMPLE )
 
 ## Creating Project 
 
