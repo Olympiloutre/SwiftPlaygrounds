@@ -9,7 +9,18 @@ _( https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet )_
 
 ✓ https://docs.vapor.codes/3.0/getting-started/toolbox/         _( Templates references )_
 
+~ https://docs.vapor.codes/3.0/getting-started/routing/          _( Understanding routing )_
+
+
+https://docs.vapor.codes/3.0/getting-started/application/
+
+https://docs.vapor.codes/3.0/getting-started/controllers/
+
+https://docs.vapor.codes/3.0/getting-started/content/
+
+
 https://docs.vapor.codes/3.0/sqlite/fluent/ _(SQL Lite Doc)_
+
 
 ### Other
 ~~http://swiftontheside.com/2016/12/29/simple-rest-api-in-swift-with-vapor/~~ **TOO OLD**
@@ -58,6 +69,7 @@ In order to run select the **run** scheme from the scheme menu and **My Mac** as
 
 
 ## SqlLite Example 
+https://docs.vapor.codes/3.0/sqlite/fluent/
 
 ### 1. Package 
 
@@ -73,5 +85,43 @@ then close and run
 
     > vapor xcode
     
+_Note: Be sure to do that at the beginning of the project. Runing 'vapor xcode' will recreate the project and thus voiding some references_
+_Note 2: Maybe just by using 'vapor build' ?_
 
+
+### 2. Model 
+
+Creating your model corresponding to your table
+
+_App > Models > MySQLLiteModel.swift_
+1. Model 
+2. Migration 
+
+
+### 3. Configure
+
+The next step is to configure your database. 
+_App > configure.swift_
+1. Register providers
+2. Configure migrations
+3. ( Define Router which will manage routes )
+
+
+
+### 4. Controllers 
+
+Before linking our Model to a route, we need to configure the expected reaction of the server when it is called. 
+For that we create Controllers 
+_App > Controllers > MySQLLiteController.swift_
+1. getAll() basic func 
+
+
+
+### 5. Routes / Query
+
+Finally let's configure the route query 
+_Note : in the configure.swift file we have  'try routes(router)' which basicaly says "register my routes defined inside routes ( routes.swift )". Do not forget it_
+
+_App > routes.swift_
+1. Add the new Routes
 
