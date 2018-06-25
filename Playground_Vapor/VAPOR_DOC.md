@@ -4,10 +4,12 @@ _( https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet )_
 ### Vapor Website 
  https://vapor.codes/
 
-### Current Tutorial 
-✓ https://docs.vapor.codes/3.0/getting-started/hello-world/
+### Tutorial Dones
+✓ https://docs.vapor.codes/3.0/getting-started/hello-world/   _( Build and run template )_
+✓ https://docs.vapor.codes/3.0/getting-started/toolbox/         _( Templates references )_
 
-### Rest Template 
+
+### TODO
 ~~http://swiftontheside.com/2016/12/29/simple-rest-api-in-swift-with-vapor/~~ **TOO OLD**
 
 https://github.com/fgulan/vapor-example
@@ -49,10 +51,12 @@ This will remove vapor git reference and let you use your root repository
 I used the tutorial listed before to make my own template. 
 Here are the modifications & Notes. 
 
-### Models
+### Run 
 
-_App > Models > MyModel.swift_ 
+In order to run select the **run** scheme from the scheme menu and **My Mac** as the deployment target, then click the play button.
 
+    Server starting on http://localhost:8080
+    
 
 
 
