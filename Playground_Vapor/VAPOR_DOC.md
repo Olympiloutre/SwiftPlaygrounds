@@ -5,7 +5,8 @@ _( https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet )_
  https://vapor.codes/
 
 ## Vapor Template Used Here
-http://swiftontheside.com/2016/12/29/simple-rest-api-in-swift-with-vapor/
+~~http://swiftontheside.com/2016/12/29/simple-rest-api-in-swift-with-vapor/~~ **TOO OLD**
+https://github.com/fgulan/vapor-example
 
 ## Creating Project 
 
@@ -37,6 +38,17 @@ This will remove vapor git reference and let you use your root repository
     > git add *
     > git commit -m "adding vapor"
     > git push origin
+
+
+## This Template 
+
+I used the tutorial listed before to make my own template. 
+Here are the modifications & Notes. 
+
+### Models
+
+_App > Models > MyModel.swift_ 
+
 
 
 
