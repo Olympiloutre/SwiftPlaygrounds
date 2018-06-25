@@ -4,18 +4,18 @@ _( https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet )_
 ### Vapor Website 
  https://vapor.codes/
 
-### Tutorial Dones
+### Official Tutorials
 ✓ https://docs.vapor.codes/3.0/getting-started/hello-world/   _( Build and run template )_
 
 ✓ https://docs.vapor.codes/3.0/getting-started/toolbox/         _( Templates references )_
 
+https://docs.vapor.codes/3.0/mysql/fluent/ _(MySQL Doc)_
 
-### TODO
+### Other
 ~~http://swiftontheside.com/2016/12/29/simple-rest-api-in-swift-with-vapor/~~ **TOO OLD**
 
 https://docs.vapor.codes/3.0/getting-started/spm/
 
-https://github.com/fgulan/vapor-example ?  ( REST EXAMPLE )
 
 ## Creating Project 
 
@@ -49,19 +49,18 @@ This will remove vapor git reference and let you use your root repository
     > git push origin
 
 
-## This Template 
-
-I used the tutorial listed before to make my own template. 
-Here are the modifications & Notes. 
-
-### Run 
+## Run
 
 In order to run select the **run** scheme from the scheme menu and **My Mac** as the deployment target, then click the play button.
 
     Server starting on http://localhost:8080
-    
 
 
+
+## This Template 
+
+I used the tutorial listed before to make my own template. 
+Here are the modifications & Notes. 
 
 
 
