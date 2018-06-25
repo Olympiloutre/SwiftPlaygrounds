@@ -13,10 +13,10 @@ __Prerequisit : HomeBrew Installed__
 
 With command lines : 
 
-_> vapor new Playground_Vapor_ 
-_> cd Playground_Vapor_ 
-_> vapor build_ 
-_> vapor xcode_ 
+    > vapor new Playground_Vapor
+    > cd Playground_Vapor
+    > vapor build
+    > vapor xcode
 
 This will __create__ a new project __build__ it and __create an XCode project__ from it 
 
@@ -28,7 +28,20 @@ A __git reference is already embedded__ in a Vapor Project. This can be a pain i
 
 With command lines : 
 
-_> cd Playground_Vapor_
-_> rm -rf .git/_
+    > cd Playground_Vapor
+    > rm -rf .git/
 
 This will remove vapor git reference and let you use your root repository
+
+    > cd ..
+    > git add *
+    > git commit -m "adding vapor"
+    > git push origin
+
+
+
+
+
+
+
+
