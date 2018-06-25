@@ -6,6 +6,7 @@ _( https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet )_
 
 ## Vapor Template Used Here
 ~~http://swiftontheside.com/2016/12/29/simple-rest-api-in-swift-with-vapor/~~ **TOO OLD**
+
 https://github.com/fgulan/vapor-example
 
 ## Creating Project 
