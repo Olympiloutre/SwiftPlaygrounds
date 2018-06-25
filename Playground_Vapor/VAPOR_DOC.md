@@ -57,13 +57,21 @@ In order to run select the **run** scheme from the scheme menu and **My Mac** as
 
 
 
-## This Template 
+## MySQL Example 
 
-I used the tutorial listed before to make my own template. 
-Here are the modifications & Notes. 
+### 1. Package 
 
+The first step to using Fluent MySQL is adding it as a dependency to your project in your SPM package manifest file.
 
+    .package(url: "https://github.com/vapor/fluent-mysql.git", from: "3.0.0-rc"),
 
+and 
 
+    .target(name: "App", dependencies: ["FluentMySQL", ...]),
+
+then close and run 
+
+    > vapor xcode
+    
 
 
