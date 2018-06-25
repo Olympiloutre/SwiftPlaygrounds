@@ -9,7 +9,7 @@ _( https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet )_
 
 ✓ https://docs.vapor.codes/3.0/getting-started/toolbox/         _( Templates references )_
 
-https://docs.vapor.codes/3.0/mysql/fluent/ _(MySQL Doc)_
+https://docs.vapor.codes/3.0/sqlite/fluent/ _(SQL Lite Doc)_
 
 ### Other
 ~~http://swiftontheside.com/2016/12/29/simple-rest-api-in-swift-with-vapor/~~ **TOO OLD**
@@ -57,17 +57,17 @@ In order to run select the **run** scheme from the scheme menu and **My Mac** as
 
 
 
-## MySQL Example 
+## SqlLite Example 
 
 ### 1. Package 
 
-The first step to using Fluent MySQL is adding it as a dependency to your project in your SPM package manifest file.
+The first step to using Fluent SqlLite is adding it as a dependency to your project in your SPM package manifest file.
 
-    .package(url: "https://github.com/vapor/fluent-mysql.git", from: "3.0.0-rc"),
+    .package(url: "https://github.com/vapor/fluent-sqlite.git", from: "3.0.0-rc.2")
 
 and 
 
-    .target(name: "App", dependencies: ["FluentMySQL", ...]),
+    .target(name: "App", dependencies: ["FluentSQLite", ...]),
 
 then close and run 
 
