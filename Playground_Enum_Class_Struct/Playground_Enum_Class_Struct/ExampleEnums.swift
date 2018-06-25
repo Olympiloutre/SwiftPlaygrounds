@@ -18,6 +18,8 @@ import Foundation
  
  This is an elegant way to restrict usage of specific values inside the code
  
+ New enum cases CANNOT be added later in an extension. That leaves either a class or a struct.
+ 
  This will also be really helpfull for error handling
  
  */

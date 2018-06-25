@@ -22,4 +22,7 @@
    <FileRef
       location = "group:Playground_Generics/../Playground_Closure/Playground_Closure.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Playground_SharedInstance/Playground_SharedInstance.xcodeproj">
+   </FileRef>
 </Workspace>

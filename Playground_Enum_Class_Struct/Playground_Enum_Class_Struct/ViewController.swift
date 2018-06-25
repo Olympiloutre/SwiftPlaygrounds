@@ -33,11 +33,15 @@
                       model types
  
  
+ Note: all models can adopt protocol, even enum's
+ 
      
        I. ENUMS
-      II. STRUCT
-     III. CLASS
-     
+      II. STRUCT ( part* )
+     III. CLASS  ( part* )
+ 
+ 
+ Note* : this tut is essentially to learn about enums, class and struct are just reminders here.
  
  */
 
@@ -82,6 +86,32 @@ class ViewController: UIViewController {
         print(MyOptional.some(Double(6)).desc)
         // cannot write 'MyOptional.none.desc' -> we have to set the Generic Type
         print(MyOptional<Double>.none.desc)
+        
+        
+        
+        
+        // MARK:- II. STRUCT
+        // -> go to ExampleStruct
+        print("--- Circle Struct Example ---")
+        var a = CircleStruct(radius: 60.0)
+        var b = a
+        a.radius = 1000.0
+        print(a.radius) // > 1000.0
+        print(b.radius) // >   60.0
+        
+        
+        
+        
+        // MARK:- III. CLASS
+        // -> go to ExampleClass
+        print("--- Circle Class Example ---")
+        var c = CircleClass(radius: 60.0)
+        var d = c
+        c.radius = 1000.0
+        print(c.radius) // > 1000.0
+        print(d.radius) // > 1000.0
+        
+        
 
     }
 
