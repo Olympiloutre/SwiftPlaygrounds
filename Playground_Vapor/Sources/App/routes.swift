@@ -3,24 +3,41 @@ import Vapor
 /// Register your application's routes here.
 public func routes(_ router: Router) throws {
     
-    // Basic "Hello, world!" example ( http://localhost:8080/hello )
+    
+    // on navigator : http://localhost:8080/users
     router.get("hello") { req in
         return "Hello, world!"
     }
 
+    
+
+    // --- SQLite Example ---
+    
+    // All action placed inside a Controller
+    let userController = UserController()
+    
+    // GET : on navigator or on HTTP Client
+    /// http://localhost:8080/users
+    /// Method : GET
+    /// Parameters : none
+    router.get("users", use: userController.index)
+    
+    
+    // POST : on HTTP Client
+    /// http://localhost:8080/users
+    /// Method : POST
+    /// Parameters :
+    ///   name : Romuald
+    ///   age : 20
+    router.post("users", use: userController.create)
 
     
     
-    let userController = UserController()
-    router.get("users", use: userController.index)
- 
-    
-    /* TO UNDERSTAND
-     // Previous example of configuring a controller
-     let todoController = TodoController()
-     router.get("todos", use: todoController.index)
-     router.post("todos", use: todoController.create)
-     router.delete("todos", Todo.parameter, use: todoController.delete)
-     */
+    // DELETE : on HTTP Client
+    /// http://localhost:8080/users/1 ( users/ID_USER )
+    /// Method : DELETE
+    /// Parameters : none
+    router.delete("users", User.parameter, use: userController.delete)
+
     
 }

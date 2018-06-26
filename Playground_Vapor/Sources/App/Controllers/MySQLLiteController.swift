@@ -16,27 +16,18 @@ final class UserController {
         return User.query(on: req).all()
     }
     
-    
-    /* TO UNDERSTAND 
-     /// Returns a list of all `User`s.
-     func getAll(_ req: Request) throws -> Future<[User]> {
-     return User.query(on: req).all()
-     }
-     
-    /// Deletes a parameterized `User`.
-    func delete(_ req: Request) throws -> Future<HTTPStatus> {
-        return try req.parameters.next(User.self).flatMap { user in
-            return user.delete(on: req)
-            }.transform(to: .ok)
-    }
-     
     /// Saves a decoded `User` to the database.
     func create(_ req: Request) throws -> Future<User> {
         return try req.content.decode(User.self).flatMap { user in
             return user.save(on: req)
         }
     }
-    */
     
+    /// Deletes a parameterized `User`.
+    func delete(_ req: Request) throws -> Future<HTTPStatus> {
+        return try req.parameters.next(User.self).flatMap { user in
+            return user.delete(on: req)
+            }.transform(to: .ok)
+    }
     
 }
