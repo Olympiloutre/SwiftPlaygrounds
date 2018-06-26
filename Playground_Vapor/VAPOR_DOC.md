@@ -19,10 +19,11 @@ https://docs.vapor.codes/3.0/getting-started/content/
 
 
 
+### SQL Fluent Tutorials
 
-https://docs.vapor.codes/3.0/sqlite/fluent/                               _(Fluent SQLite Doc)_
+✓ https://docs.vapor.codes/3.0/sqlite/fluent/                               _(Fluent SQLite Doc)_
 
-http://beta.docs.vapor.codes/fluent/query/                              _( Fluent Query Tutorial )_
+✓ http://beta.docs.vapor.codes/fluent/query/                              _( Fluent **Query** Tutorial )_
 
 
 
