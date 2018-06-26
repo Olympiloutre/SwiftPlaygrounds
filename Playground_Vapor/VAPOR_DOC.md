@@ -4,22 +4,27 @@ _( https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet )_
 ### Vapor Website 
  https://vapor.codes/
 
-### Official Tutorials
+### Vapor Tutorials
 ✓ https://docs.vapor.codes/3.0/getting-started/hello-world/   _( Build and run template )_
 
 ✓ https://docs.vapor.codes/3.0/getting-started/toolbox/         _( Templates references )_
 
-~ https://docs.vapor.codes/3.0/getting-started/routing/          _( Understanding routing )_
+✓ https://docs.vapor.codes/3.0/getting-started/routing/          _( Understanding routing )_
 
+✓ https://docs.vapor.codes/3.0/getting-started/controllers/
 
 https://docs.vapor.codes/3.0/getting-started/application/
-
-https://docs.vapor.codes/3.0/getting-started/controllers/
 
 https://docs.vapor.codes/3.0/getting-started/content/
 
 
-https://docs.vapor.codes/3.0/sqlite/fluent/ _(SQL Lite Doc)_
+
+
+https://docs.vapor.codes/3.0/sqlite/fluent/                               _(Fluent SQLite Doc)_
+
+http://beta.docs.vapor.codes/fluent/query/                              _( Fluent Query Tutorial )_
+
+
 
 
 ### Other
@@ -118,8 +123,19 @@ Before linking our Model to a route, we need to configure the expected reaction 
 For that we create Controllers 
 
 _App > Controllers > MySQLLiteController.swift_
-1. getAll() basic func 
+1. Index 
+2. Create 
+3. Delete 
+4. ...
 
+#### Notes on Query : 
+
+    return User.query(on: req).filter(\.age == 17).all()
+
+    return User.query(on: req).group(.and) { and in
+        and.filter(\.age < 18)
+        and.filter(\.age > 65)
+    }.all()
 
 
 ### 5. Routes / Query

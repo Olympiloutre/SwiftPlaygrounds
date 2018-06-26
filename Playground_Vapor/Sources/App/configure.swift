@@ -18,17 +18,10 @@ public func configure(_ config: inout Config, _ env: inout Environment, _ servic
     // "add all of the services required for Fluent SQLite to work + default DB config."
     try services.register(FluentSQLiteProvider())
     
-    /*
-    /// Register middleware
-    var middlewares = MiddlewareConfig() // Create _empty_ middleware config
-    /// middlewares.use(FileMiddleware.self) // Serves files from `Public/` directory
-    middlewares.use(ErrorMiddleware.self) // Catches errors and converts to HTTP response
-    services.register(middlewares)
-    */
-    
     // Configure a SQLite database
-    let sqlite = try SQLiteDatabase(storage: .memory)
-    
+    // let sqlite = try SQLiteDatabase(storage: .memory)
+    let sqlite = try SQLiteDatabase(storage: .file(path: "MySQLiteDB.sqlite")) // persistent
+
     /// Register the configured SQLite database to the database config.
     var databases = DatabasesConfig()
     databases.add(database: sqlite, as: .sqlite)
