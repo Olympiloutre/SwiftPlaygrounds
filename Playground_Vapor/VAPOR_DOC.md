@@ -25,15 +25,18 @@ https://docs.vapor.codes/3.0/getting-started/content/
 
 ✓ http://beta.docs.vapor.codes/fluent/query/                              _( Fluent **Query** Tutorial )_
 
+http://beta.docs.vapor.codes/routing/parameters/
+
+http://beta.docs.vapor.codes/fluent/relations/ 
 
 
-
-### Other
+### To See ?
 ~~http://swiftontheside.com/2016/12/29/simple-rest-api-in-swift-with-vapor/~~ **TOO OLD**
 
 https://medium.com/@azamsharp/look-maa-server-side-swift-using-vapor-638cc3f5a5a8
 
 https://docs.vapor.codes/3.0/getting-started/spm/
+
 
 
 
