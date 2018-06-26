@@ -95,12 +95,13 @@ Creating your model corresponding to your table
 
 _App > Models > MySQLLiteModel.swift_
 1. Model 
-2. Migration 
+2. Migration / Content / Parameters
 
 
 ### 3. Configure
 
 The next step is to configure your database. 
+
 _App > configure.swift_
 1. Register providers
 2. Configure migrations
@@ -112,6 +113,7 @@ _App > configure.swift_
 
 Before linking our Model to a route, we need to configure the expected reaction of the server when it is called. 
 For that we create Controllers 
+
 _App > Controllers > MySQLLiteController.swift_
 1. getAll() basic func 
 

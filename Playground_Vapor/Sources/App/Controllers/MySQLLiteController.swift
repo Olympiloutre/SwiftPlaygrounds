@@ -17,7 +17,7 @@ final class UserController {
     }
     
     
-    /* TO UNDERSTAND - WHY Future ??? 
+    /* TO UNDERSTAND 
      /// Returns a list of all `User`s.
      func getAll(_ req: Request) throws -> Future<[User]> {
      return User.query(on: req).all()

@@ -37,7 +37,7 @@ extension User: Migration { }
 /// Allows `User` to be encoded to and decoded from HTTP messages.
 extension User: Content { }
 
-/// Allows `User` to be used as a dynamic parameter in route definitions.
+/// Allows `User` to be used as a dynamic parameter in route definitions. - Otherwise error in routes.swift
 extension User: Parameter { }
 
 
