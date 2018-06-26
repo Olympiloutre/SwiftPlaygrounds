@@ -37,4 +37,9 @@ class ClosureClassStrongRefCycle {
  "The property is declared with lazy, meaning that it will not be assigned until it’s used the first time.
  This is required because it’s using self.str, which isn't available until after the initializer runs."
  
+ 
+ 
+ “The lazy initializer for a global variable (also for static members of structs and enums) is run the first time that global is accessed, and is launched as `dispatch_once` to make sure that the initialization is atomic.”
+ ( https://krakendev.io/blog/the-right-way-to-write-a-singleton )
+ 
  */

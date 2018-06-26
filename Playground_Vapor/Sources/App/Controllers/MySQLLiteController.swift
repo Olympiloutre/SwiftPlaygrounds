@@ -5,14 +5,14 @@
 //  Created by Romuald Brochard on 26/06/2018.
 //
 
-import Foundation
+// import Foundation
 import Vapor
 
 /// Controls operations on `User`s.
 final class UserController {
     
     /// Returns a list of all `User`s.
-    func getAll(_ req: Request) throws -> Future<[User]> {
+    func index(_ req: Request) throws -> Future<[User]> {
         return User.query(on: req).all()
     }
     

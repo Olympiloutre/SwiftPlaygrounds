@@ -9,15 +9,11 @@ public func routes(_ router: Router) throws {
     }
 
 
-    router.get("users") { req in
-        return User.query(on: req).all()
-    }
     
     
-    /*
     let userController = UserController()
-    router.get("users", use: userController.getAll)
- */
+    router.get("users", use: userController.index)
+ 
     
     /* TO UNDERSTAND
      // Previous example of configuring a controller
