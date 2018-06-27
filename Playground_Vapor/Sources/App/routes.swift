@@ -22,7 +22,7 @@ public func routes(_ router: Router) throws {
     /// http://localhost:8080/index
     /// Method : GET
     /// Parameters : none
-    router.get("index", use: userController.index)
+    // router.get("index", use: userController.index) // 'index' is deprecated
     
     
     // POST : on HTTP Client
@@ -32,26 +32,36 @@ public func routes(_ router: Router) throws {
     /// Parameters :
     ///   name : Romuald
     ///   age : 20
-    router.post("user", use: userController.create)
+    router.post("users", use: userController.create)
 
     
     // DELETE : on HTTP Client
     // delete user using it's ID
-    /// http://localhost:8080/user/1 ( users/ID_USER )
+    /// http://localhost:8080/users/1 ( users/ID_USER )
     /// Method : DELETE
     /// Parameters : none
-    router.delete("user", User.parameter, use: userController.delete)
+    router.delete("users", User.parameter, use: userController.delete)
     
     
     
     
     // GET : on navigator or on HTTP Client
     // get a user by ID
-    /// http://localhost:8080/user/1
+    /// http://localhost:8080/users/1
     /// Method : GET
     /// Parameters : none
-    router.get("user", User.parameter, use: userController.getUser)
+    router.get("users", User.parameter, use: userController.getUser)
  
+    
+    // POST : on HTTP Client
+    // update a user by ID
+    /// http://localhost:8080/users/1
+    /// Method : PUT
+    /// Parameters :
+    ///   name : Romuald
+    ///   age : 20
+    router.put("users", User.parameter, use: userController.updateUser)
+    
     
     
     // GET : on navigator or on HTTP Client
@@ -62,6 +72,8 @@ public func routes(_ router: Router) throws {
     ///   age : 20
     /// && ||
     ///   name : Romuald
+    /// or
+    ///   none
     router.get("users", use: userController.filter)
     
     

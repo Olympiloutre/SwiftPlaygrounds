@@ -22,7 +22,15 @@ final class UserController {
     /*
      
                     Gathering Params
-    
+     
+       ---  !! GET ONLY !!  ---
+     
+     
+     
+    Parameters are passed in URL only in GET !!
+     This method won't work for other methods which have their parameters passed in body ( ~> decode )
+     
+     
     ex request :
         url : http://localhost:8080/users
         method : GET
@@ -43,20 +51,34 @@ final class UserController {
      
     ( And or sub values )
     let name = req.query[String.self, at: "user", "name"]
+     
+     NOTE : This method for gathering parameters is ONLY available IN POST
+     
+     
+     --- !! POST, PUT et autre !! ---
+     
+     In POST / PUT you have to decode the body. This implies the body contains ÀLL the User's parameters but it's not an issue..
+     
+     Note Gary : " ce n'est pas grave car dans la méthodio rest, dans un premier temps tu récupère ton objet entier via un GET, tu le modifie et tu le renvoi entièrement au serveur"
     
+     ...
+     return try req.content.decode(User.self).flatMap { user in
+     ...
     
     */
     
     
     
-    /// Returns a list of all `User`s.
+    
+    /// Returns a list of all `User`s. - deprecated since 'users' filter - see below
+    @available(*, deprecated)
     func index(_ req: Request) throws -> Future<[User]> { // ( return a list of User )
         return User.query(on: req).all()
     }
     
     
-    /// Saves a decoded `User` to the database.
-    func create(_ req: Request) throws -> Future<User> { // ( and return a siumple User )
+    /// Saves a decoded `User` to the database. ( POST so 'decode' body parameters )
+    func create(_ req: Request) throws -> Future<User> { // ( and return a simple User )
         return try req.content.decode(User.self).flatMap { user in
             return user.save(on: req)
         }
@@ -74,6 +96,37 @@ final class UserController {
     /// Get 'User' by ID
     func getUser(_ req: Request) throws -> Future<User> {
         return try req.parameters.next(User.self)
+    }
+    
+    
+    
+    /// Update 'User' by ID
+    /*
+     
+     Reminder : in PUT, parameters are passed in body
+     
+     1. we decode the new user (updated_user) , which parameters are passed inside the body of the PUT request
+     
+     2. we find the user to update ( old_user )
+     
+     3. we copy the new values inside old user
+     
+     4. we save
+     
+     
+     *Decoding implies that all the parameters are passed inside the body. Otherwise an error is thown considering a User was not created due to missing params.
+     
+     */
+    func updateUser(_ req: Request) throws -> Future<User> {
+
+        return try req.content.decode(User.self).flatMap { updated_user in  // 1.
+            return try req.parameters.next(User.self).flatMap { old_user in // 2.
+                old_user.name = updated_user.name // 3.1
+                old_user.age = updated_user.age   // 3.2
+                
+                return old_user.save(on: req) // 4.
+            }
+        }
     }
     
     
@@ -121,9 +174,12 @@ final class UserController {
         
         let parameter_name = req.query[String.self, at: "name"]
         let parameter_age = req.query[Int.self, at: "age"]
+
+        if parameter_age == nil && parameter_name == nil {
+            return User.query(on: req).all()
+        }
         
         return User.query(on: req).group(.and) { and in
-            
             
                 // if name parameter found
                 if let _ = parameter_name {
@@ -135,15 +191,12 @@ final class UserController {
                     and.filter(\.age == parameter_age!)
                 }
             
-                and.filter(true)
-            
-            }.all()
+            }.sort(\.name, .ascending)
+            .all()
         
     }
     
     // TODO : raw SQL Queries
-    // TODO sort
-    // TODO update
     // TODO drop
     // TODO : Errors / Aborts https://medium.com/@martinlasek/tutorial-how-to-implement-crud-with-vapor-2-f0dd9efef013
     
