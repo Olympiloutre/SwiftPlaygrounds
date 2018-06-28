@@ -39,6 +39,8 @@ https://medium.com/@martinlasek/tutorial-how-to-implement-crud-with-vapor-2-f0dd
 
 https://docs.vapor.codes/3.0/getting-started/spm/
 
+https://medium.com/@martinlasek/tutorial-how-to-write-models-using-fluent-e9482d335a5f **!!! TO READ**
+
 
 ### Testing 
 
