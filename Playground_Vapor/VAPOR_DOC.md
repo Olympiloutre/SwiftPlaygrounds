@@ -156,3 +156,11 @@ _Note : in the configure.swift file we have  'try routes(router)' which basicaly
 _App > routes.swift_
 1. Add the new Routes
 
+
+### Errors 
+
+Errors are handled directly in this config
+
+    return try User...
+    
+won't be catch in a do - catch block. This may be due to the **middleware** written in config? 
