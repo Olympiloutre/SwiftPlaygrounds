@@ -35,8 +35,14 @@ http://beta.docs.vapor.codes/fluent/relations/
 
 https://medium.com/@azamsharp/look-maa-server-side-swift-using-vapor-638cc3f5a5a8
 
+https://medium.com/@martinlasek/tutorial-how-to-implement-crud-with-vapor-2-f0dd9efef013
+
 https://docs.vapor.codes/3.0/getting-started/spm/
 
+
+### Testing 
+
+https://medium.com/@martinlasek/tutorial-how-to-write-tests-with-vapor-2-73f600d4ea8b
 
 
 

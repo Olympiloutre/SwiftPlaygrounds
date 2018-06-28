@@ -7,7 +7,8 @@
 // Sources :
 //  http://beta.docs.vapor.codes/fluent/query/
 //  http://beta.docs.vapor.codes/routing/parameters/
-
+//  https://medium.com/@martinlasek/tutorial-how-to-implement-crud-with-vapor-2-f0dd9efef013
+//
 // import Foundation
 import Vapor
 import FluentSQLite
@@ -79,9 +80,11 @@ final class UserController {
     
     /// Saves a decoded `User` to the database. ( POST so 'decode' body parameters )
     func create(_ req: Request) throws -> Future<User> { // ( and return a simple User )
+        
         return try req.content.decode(User.self).flatMap { user in
             return user.save(on: req)
         }
+        
     }
     
     
@@ -106,11 +109,8 @@ final class UserController {
      Reminder : in PUT, parameters are passed in body
      
      1. we decode the new user (updated_user) , which parameters are passed inside the body of the PUT request
-     
      2. we find the user to update ( old_user )
-     
      3. we copy the new values inside old user
-     
      4. we save
      
      
@@ -127,6 +127,8 @@ final class UserController {
                 return old_user.save(on: req) // 4.
             }
         }
+        
+
     }
     
     
@@ -195,10 +197,6 @@ final class UserController {
             .all()
         
     }
-    
-    // TODO : raw SQL Queries
-    // TODO drop
-    // TODO : Errors / Aborts https://medium.com/@martinlasek/tutorial-how-to-implement-crud-with-vapor-2-f0dd9efef013
     
 
 }
