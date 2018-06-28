@@ -95,7 +95,6 @@ final class UserController {
             }.transform(to: .ok)
     }
     
-    
     /// Get 'User' by ID
     func getUser(_ req: Request) throws -> Future<User> {
         return try req.parameters.next(User.self)
