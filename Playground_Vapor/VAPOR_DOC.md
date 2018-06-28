@@ -4,6 +4,7 @@ _( https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet )_
 ### Vapor Website 
  https://vapor.codes/
 
+
 ### Vapor Tutorials
 ✓ https://docs.vapor.codes/3.0/getting-started/hello-world/   _( Build and run template )_
 
@@ -25,13 +26,14 @@ https://docs.vapor.codes/3.0/getting-started/content/
 
 ✓ http://beta.docs.vapor.codes/fluent/query/                              _( Fluent **Query** Tutorial )_
 
-http://beta.docs.vapor.codes/routing/parameters/
+✓ http://beta.docs.vapor.codes/routing/parameters/
 
 http://beta.docs.vapor.codes/fluent/relations/ 
 
 
 ### To See ?
-~~http://swiftontheside.com/2016/12/29/simple-rest-api-in-swift-with-vapor/~~ **TOO OLD**
+
+https://medium.com/@martinlasek/tutorial-how-to-write-models-using-fluent-e9482d335a5f **!!! TO READ**
 
 https://medium.com/@azamsharp/look-maa-server-side-swift-using-vapor-638cc3f5a5a8
 
@@ -39,7 +41,6 @@ https://medium.com/@martinlasek/tutorial-how-to-implement-crud-with-vapor-2-f0dd
 
 https://docs.vapor.codes/3.0/getting-started/spm/
 
-https://medium.com/@martinlasek/tutorial-how-to-write-models-using-fluent-e9482d335a5f **!!! TO READ**
 
 
 ### Testing 
