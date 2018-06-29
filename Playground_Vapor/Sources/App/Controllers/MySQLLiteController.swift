@@ -78,6 +78,17 @@ final class UserController {
     }
     
     
+    
+    
+    /*
+     
+     "To access a future value you either need map or flatMap. If your return value inside a map function is not a future you use map otherwise flatMap."
+     https://medium.com/@martinlasek/tutorial-how-to-write-models-using-fluent-e9482d335a5f
+     */
+    
+    
+    
+    
     /// Saves a decoded `User` to the database. ( POST so 'decode' body parameters )
     func create(_ req: Request) throws -> Future<User> { // ( and return a simple User )
         
