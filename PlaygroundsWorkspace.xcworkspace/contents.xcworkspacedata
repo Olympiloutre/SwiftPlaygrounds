@@ -11,6 +11,9 @@
       location = "group:Playground_Equatables/Playground_Equatables.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Playground_Embedded_Segue/Playground_Embedded_Segue.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Playground_Closure/../Playground_Enum_Class_Struct/Playground_Enum_Class_Struct.xcodeproj">
    </FileRef>
    <FileRef

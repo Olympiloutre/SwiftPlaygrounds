@@ -26,16 +26,6 @@
 		C7783CDD20D01C5300A68853 /* ClassWithoutArrayCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7783CDC20D01C5300A68853 /* ClassWithoutArrayCycle.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		C79238E320D95ED80099CBF9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C79238DF20D95ED80099CBF9 /* Playground_Embedded_Segue.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C7783CE720D119CA00A68853;
-			remoteInfo = Playground_Embedded_Segue;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		C7783CA320CE767300A68853 /* Playground_Arc_Memory_Management.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground_Arc_Memory_Management.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7783CA620CE767400A68853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +46,6 @@
 		C7783CD720D00B7300A68853 /* ClosureClassWeakReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureClassWeakReference.swift; sourceTree = "<group>"; };
 		C7783CDA20D019DC00A68853 /* ClassWithArrayCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassWithArrayCycle.swift; sourceTree = "<group>"; };
 		C7783CDC20D01C5300A68853 /* ClassWithoutArrayCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassWithoutArrayCycle.swift; sourceTree = "<group>"; };
-		C79238DF20D95ED80099CBF9 /* Playground_Embedded_Segue.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Playground_Embedded_Segue.xcodeproj; path = ../Playground_Embedded_Segue/Playground_Embedded_Segue.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +62,6 @@
 		C7783C9A20CE767300A68853 = {
 			isa = PBXGroup;
 			children = (
-				C79238DF20D95ED80099CBF9 /* Playground_Embedded_Segue.xcodeproj */,
 				C7783CA520CE767300A68853 /* Playground_Arc_Memory_Management */,
 				C7783CA420CE767300A68853 /* Products */,
 			);
@@ -152,14 +140,6 @@
 			path = "Bonus Example Array";
 			sourceTree = "<group>";
 		};
-		C79238E020D95ED80099CBF9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C79238E420D95ED80099CBF9 /* Playground_Embedded_Segue.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,28 +186,12 @@
 			mainGroup = C7783C9A20CE767300A68853;
 			productRefGroup = C7783CA420CE767300A68853 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = C79238E020D95ED80099CBF9 /* Products */;
-					ProjectRef = C79238DF20D95ED80099CBF9 /* Playground_Embedded_Segue.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				C7783CA220CE767300A68853 /* Playground_Arc_Memory_Management */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		C79238E420D95ED80099CBF9 /* Playground_Embedded_Segue.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = Playground_Embedded_Segue.app;
-			remoteRef = C79238E320D95ED80099CBF9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C7783CA120CE767300A68853 /* Resources */ = {

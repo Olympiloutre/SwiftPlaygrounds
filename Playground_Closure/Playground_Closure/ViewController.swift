@@ -31,6 +31,9 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    var aClosure: () -> () = {}
+    var aVar : Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -222,8 +225,46 @@ class ViewController: UIViewController {
         
         
         
-        // TODO : Escaping and non escaping closures
+        
+        // --- 6.Escaping Closures ---
         // https://medium.com/@kumarpramod017/what-do-mean-escaping-and-nonescaping-closures-in-swift-d404d721f39d
+        // it is a way to add closure in function right after it's call. It's merely only syntax smoothing
+        print("--- 6.Escaping Closures ---")
+        func escapingFunc(completion:  @escaping () -> ()) {
+            print("escaped")
+            completion()
+        }
+        
+        escapingFunc() { // note the '()' is not mandatory is there is not parameters
+            print("my closure action")
+        }
+        
+        
+        
+        // --- 7.Weak / Unowned self ---
+        // https://stackoverflow.com/a/24320474/5464805
+        // as said earlier, closures can retain values in their context
+        // if in a closure we call self. then it will be retained, therefore creating a strong ref cycle
+        // See - Arc Memory Management Playground
+        print("--- 7.[unowned self] [weak self] ---")
+        
+        // This will create a strong ref cycle, self retaining aClosure, and aClosure retaining self, considering it's calling it inside it's context...
+        self.aClosure = {
+            self.aVar += 1
+        }
+        self.aClosure()
+        print("aVar = \(self.aVar)")
+        
+        
+        // ... by adding [unowned self] or [weak self] at the beginning of the closure, we are telling swift not to retain self if it comes to be deallocated...
+        self.aClosure = { [unowned self] in
+            self.aVar += 1
+        }
+        self.aClosure()
+        print("aVar = \(self.aVar)")
+        
+        //... "The difference between unowned and weak is that weak is declared as an Optional while unowned is not. By declaring it weak you get to handle the case that it might be nil inside the closure at some point. If you try to access an unowned variable that happens to be nil, it will crash the whole program. So only use unowned when you are positive that variable will always be around while the closure is around"...
+        
         
         
     }
