@@ -28,4 +28,10 @@
    <FileRef
       location = "group:Playground_SharedInstance/Playground_SharedInstance.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Playground_Programatic_UI/Playground_Programatic_UI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Playground_Assets/Playground_Assets.xcodeproj">
+   </FileRef>
 </Workspace>

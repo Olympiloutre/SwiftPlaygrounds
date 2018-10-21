@@ -81,17 +81,39 @@ class ViewController: UIViewController {
         // 2. ----- Generic Class  -----
         
         // Note : if you don't specify the <> generic type : "Generic parameter 'GenericType' could not be inferred"
-        let obj = ClassWithGenerics<String>()
+        let classGeneric = ClassWithGenerics<String>()
         
-        obj.add("A")
-        obj.add("B")
-        obj.add("C")
+        classGeneric.add("A")
+        classGeneric.add("B")
+        classGeneric.add("C")
         
-        print(obj.dequeu() ?? "no item")
-        print(obj.dequeu() ?? "no item")
-        print(obj.dequeu() ?? "no item")
-        print(obj.dequeu() ?? "no item")
+        print(classGeneric.dequeu() ?? "no item")
+        print(classGeneric.dequeu() ?? "no item")
+        print(classGeneric.dequeu() ?? "no item")
+        print(classGeneric.dequeu() ?? "no item")
 
+        
+        // With constraint
+        let classConstraint = ClassWithGenericsConstraint<Float>()
+        classConstraint.elements.append(1.0)
+        classConstraint.elements.append(2.0)
+        print(classConstraint.sum()) // 3.0
+        
+        // Mixed : extension constraint
+        let classExtensionNumeric = ClassWithGenerics<Float>()
+        classExtensionNumeric.add(1.0)
+        classExtensionNumeric.add(2.0)
+        classExtensionNumeric.add(3.0)
+        print(classExtensionNumeric.sum()) // 6.0
+        // print(classExtensionNumeric.concat()) // 'ClassWithGenerics<Float>' is not a subtype of 'ClassWithGenerics<String>'
+
+        let classExtensionNotNumeric = ClassWithGenerics<String>()
+        classExtensionNotNumeric.add("A")
+        classExtensionNotNumeric.add("B")
+        classExtensionNotNumeric.add("C")
+        // print(classExtensionNotNumeric.sum()) // Type 'String' does not conform to protocol 'Numeric'
+        print(classExtensionNotNumeric.concat()) // " A B C"
+        
         
         
         // 3. ----- Enum With associated values -----
@@ -114,7 +136,7 @@ class ViewController: UIViewController {
         
         // Note: stop here -> The next part of this playground will be on Error Handling
         
-        
+       
         
     }
 
