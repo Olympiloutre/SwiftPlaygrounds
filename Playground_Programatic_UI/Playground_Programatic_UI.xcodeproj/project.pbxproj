@@ -14,6 +14,7 @@
 		8DA2D73C217C9F2A00E6A8D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA2D73A217C9F2A00E6A8D7 /* LaunchScreen.storyboard */; };
 		8DA2D744217CA35900E6A8D7 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA2D743217CA35900E6A8D7 /* RootNavigationController.swift */; };
 		8DA2D746217CA99800E6A8D7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA2D745217CA99800E6A8D7 /* SecondViewController.swift */; };
+		C719F0D8217E14140084DC54 /* UIVIew+LayoutExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C719F0D7217E14140084DC54 /* UIVIew+LayoutExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8DA2D73D217C9F2A00E6A8D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DA2D743217CA35900E6A8D7 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
 		8DA2D745217CA99800E6A8D7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		C719F0D7217E14140084DC54 /* UIVIew+LayoutExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+LayoutExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				8DA2D743217CA35900E6A8D7 /* RootNavigationController.swift */,
 				8DA2D730217C9F2900E6A8D7 /* FirstViewController.swift */,
 				8DA2D745217CA99800E6A8D7 /* SecondViewController.swift */,
+				C719F0D7217E14140084DC54 /* UIVIew+LayoutExtension.swift */,
 				8DA2D738217C9F2A00E6A8D7 /* Assets.xcassets */,
 				8DA2D73A217C9F2A00E6A8D7 /* LaunchScreen.storyboard */,
 				8DA2D73D217C9F2A00E6A8D7 /* Info.plist */,
@@ -144,6 +147,7 @@
 				8DA2D744217CA35900E6A8D7 /* RootNavigationController.swift in Sources */,
 				8DA2D731217C9F2900E6A8D7 /* FirstViewController.swift in Sources */,
 				8DA2D746217CA99800E6A8D7 /* SecondViewController.swift in Sources */,
+				C719F0D8217E14140084DC54 /* UIVIew+LayoutExtension.swift in Sources */,
 				8DA2D72F217C9F2900E6A8D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
