@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Playground_Graphics/Playground_Graphics.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Playground_Arc_Memory_Management/Playground_Arc_Memory_Management.xcodeproj">
    </FileRef>
    <FileRef
@@ -33,5 +36,8 @@
    </FileRef>
    <FileRef
       location = "group:Playground_Assets/Playground_Assets.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Playground_Assets/../Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

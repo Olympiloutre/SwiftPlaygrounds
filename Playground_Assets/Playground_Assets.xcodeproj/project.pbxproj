@@ -15,6 +15,23 @@
 		8DA2D761217CAE8F00E6A8D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA2D75F217CAE8F00E6A8D7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C7C98A402191CF6C008B3029 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7C98A3B2191CF6C008B3029 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE48AF02065F8EFA811739275B12B764;
+			remoteInfo = "lottie-ios";
+		};
+		C7C98A422191CF6C008B3029 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7C98A3B2191CF6C008B3029 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58698201FC80723DC4E746E4711A36AF;
+			remoteInfo = "Pods-Playground_Graphics";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		8DA2D750217CAE8E00E6A8D7 /* Playground_Assets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground_Assets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DA2D753217CAE8E00E6A8D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +41,7 @@
 		8DA2D75D217CAE8F00E6A8D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DA2D760217CAE8F00E6A8D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DA2D762217CAE8F00E6A8D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7C98A3B2191CF6C008B3029 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = ../Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +58,7 @@
 		8DA2D747217CAE8E00E6A8D7 = {
 			isa = PBXGroup;
 			children = (
+				C7C98A3B2191CF6C008B3029 /* Pods.xcodeproj */,
 				8DA2D752217CAE8E00E6A8D7 /* Playground_Assets */,
 				8DA2D751217CAE8E00E6A8D7 /* Products */,
 			);
@@ -65,6 +84,15 @@
 				8DA2D75A217CAE8E00E6A8D7 /* Playground_Assets.xcdatamodeld */,
 			);
 			path = Playground_Assets;
+			sourceTree = "<group>";
+		};
+		C7C98A3C2191CF6C008B3029 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7C98A412191CF6C008B3029 /* Lottie.framework */,
+				C7C98A432191CF6C008B3029 /* Pods_Playground_Graphics.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,12 +141,35 @@
 			mainGroup = 8DA2D747217CAE8E00E6A8D7;
 			productRefGroup = 8DA2D751217CAE8E00E6A8D7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C7C98A3C2191CF6C008B3029 /* Products */;
+					ProjectRef = C7C98A3B2191CF6C008B3029 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8DA2D74F217CAE8E00E6A8D7 /* Playground_Assets */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C7C98A412191CF6C008B3029 /* Lottie.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Lottie.framework;
+			remoteRef = C7C98A402191CF6C008B3029 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C7C98A432191CF6C008B3029 /* Pods_Playground_Graphics.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_Playground_Graphics.framework;
+			remoteRef = C7C98A422191CF6C008B3029 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8DA2D74E217CAE8E00E6A8D7 /* Resources */ = {
