@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C7ABE9A02191D8D6001A4862 /* bomb.json in Resources */ = {isa = PBXBuildFile; fileRef = C7ABE99F2191D8D6001A4862 /* bomb.json */; };
+		C7ABE9A82191E4B2001A4862 /* cloud.json in Resources */ = {isa = PBXBuildFile; fileRef = C7ABE9A72191E4B2001A4862 /* cloud.json */; };
 		C7C98A2A2191CE80008B3029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C98A292191CE80008B3029 /* AppDelegate.swift */; };
 		C7C98A2C2191CE80008B3029 /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C98A2B2191CE80008B3029 /* LottieViewController.swift */; };
 		C7C98A2F2191CE81008B3029 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7C98A2D2191CE81008B3029 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 		119FDA2A2CEA2B5A4970C6BF /* Pods-Playground_Graphics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playground_Graphics.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Playground_Graphics/Pods-Playground_Graphics.debug.xcconfig"; sourceTree = "<group>"; };
 		2472B5690EB0E7E789BA59C3 /* Pods_Playground_Graphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Playground_Graphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7ABE99F2191D8D6001A4862 /* bomb.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bomb.json; sourceTree = "<group>"; };
+		C7ABE9A72191E4B2001A4862 /* cloud.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cloud.json; sourceTree = "<group>"; };
 		C7C98A262191CE80008B3029 /* Playground_Graphics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground_Graphics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7C98A292191CE80008B3029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7C98A2B2191CE80008B3029 /* LottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				C7ABE99F2191D8D6001A4862 /* bomb.json */,
+				C7ABE9A72191E4B2001A4862 /* cloud.json */,
 			);
 			path = LottieFiles;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7C98A342191CE87008B3029 /* LaunchScreen.storyboard in Resources */,
+				C7ABE9A82191E4B2001A4862 /* cloud.json in Resources */,
 				C7C98A312191CE87008B3029 /* Assets.xcassets in Resources */,
 				C7C98A2F2191CE81008B3029 /* Main.storyboard in Resources */,
 				C7ABE9A02191D8D6001A4862 /* bomb.json in Resources */,
