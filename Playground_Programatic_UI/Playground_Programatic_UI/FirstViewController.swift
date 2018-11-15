@@ -49,12 +49,16 @@ class FirstViewController: UIViewController {
     var nextButton = UIButton()
     // var nexttButton: UIButton // possible but requires an 'init' override
     
+    var customView = CustomView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
         setupNextButton()
+        setupCustomView()
     }
     
+    // MARK:- Next Button
     func setupNextButton() {
         // set buttons graphics
         nextButton.backgroundColor = .white
@@ -117,5 +121,28 @@ class FirstViewController: UIViewController {
         
     }
     
+    
+    // MARK:- Programatic Custom View - cf CustomView.swift
+    func setupCustomView() {
+        
+        // if something needs to be set up in the custom view. ex:
+        customView.backgroundColor = .gray
+        
+        // add it to the view
+        view.addSubview(customView)
+        
+        // set constraints
+        setCustomViewConstraints()
+    }
+    
+    func setCustomViewConstraints(){
+        
+        // same method
+        customView.translatesAutoresizingMaskIntoConstraints = false
+        customView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        customView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        customView.topAnchor.constraint(equalTo: nextButton.bottomAnchor).isActive = true
+        customView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+    }
 }
 
