@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Playground_Protocol/Playground_Protocol.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Playground_Graphics/Playground_Graphics.xcodeproj">
    </FileRef>
    <FileRef
