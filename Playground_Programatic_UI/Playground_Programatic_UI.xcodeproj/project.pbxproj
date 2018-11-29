@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8D3C67EC21B0652100EA7072 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C67EB21B0652100EA7072 /* CustomView.swift */; };
+		8D3C67EE21B0667500EA7072 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C67ED21B0667500EA7072 /* ThirdViewController.swift */; };
+		8D3C67F021B066D900EA7072 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C67EF21B066D900EA7072 /* CustomTableViewCell.swift */; };
 		8DA2D72F217C9F2900E6A8D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA2D72E217C9F2900E6A8D7 /* AppDelegate.swift */; };
 		8DA2D731217C9F2900E6A8D7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA2D730217C9F2900E6A8D7 /* FirstViewController.swift */; };
 		8DA2D737217C9F2900E6A8D7 /* Playground_Programatic_UI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DA2D735217C9F2900E6A8D7 /* Playground_Programatic_UI.xcdatamodeld */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		8D3C67EB21B0652100EA7072 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		8D3C67ED21B0667500EA7072 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		8D3C67EF21B066D900EA7072 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		8DA2D72B217C9F2900E6A8D7 /* Playground_Programatic_UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground_Programatic_UI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DA2D72E217C9F2900E6A8D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DA2D730217C9F2900E6A8D7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -66,8 +70,10 @@
 				8DA2D743217CA35900E6A8D7 /* RootNavigationController.swift */,
 				8DA2D730217C9F2900E6A8D7 /* FirstViewController.swift */,
 				8DA2D745217CA99800E6A8D7 /* SecondViewController.swift */,
+				8D3C67ED21B0667500EA7072 /* ThirdViewController.swift */,
 				C719F0D7217E14140084DC54 /* UIVIew+LayoutExtension.swift */,
 				8D3C67EB21B0652100EA7072 /* CustomView.swift */,
+				8D3C67EF21B066D900EA7072 /* CustomTableViewCell.swift */,
 				8DA2D738217C9F2A00E6A8D7 /* Assets.xcassets */,
 				8DA2D73A217C9F2A00E6A8D7 /* LaunchScreen.storyboard */,
 				8DA2D73D217C9F2A00E6A8D7 /* Info.plist */,
@@ -149,9 +155,11 @@
 				8DA2D737217C9F2900E6A8D7 /* Playground_Programatic_UI.xcdatamodeld in Sources */,
 				8D3C67EC21B0652100EA7072 /* CustomView.swift in Sources */,
 				8DA2D744217CA35900E6A8D7 /* RootNavigationController.swift in Sources */,
+				8D3C67F021B066D900EA7072 /* CustomTableViewCell.swift in Sources */,
 				8DA2D731217C9F2900E6A8D7 /* FirstViewController.swift in Sources */,
 				8DA2D746217CA99800E6A8D7 /* SecondViewController.swift in Sources */,
 				C719F0D8217E14140084DC54 /* UIVIew+LayoutExtension.swift in Sources */,
+				8D3C67EE21B0667500EA7072 /* ThirdViewController.swift in Sources */,
 				8DA2D72F217C9F2900E6A8D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

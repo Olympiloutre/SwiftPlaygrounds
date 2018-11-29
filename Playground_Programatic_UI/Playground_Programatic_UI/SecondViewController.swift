@@ -38,6 +38,7 @@ import UIKit
 class SecondViewController: UIViewController {
 
     let blockView = UIView()
+    let nextButton = UIButton()
     
     var leftConstraint : NSLayoutConstraint?
     var rightConstraint : NSLayoutConstraint?
@@ -47,6 +48,7 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .darkGray
         setupBlockView()
+        setupNextButton()
     }
     
     func setupBlockView() {
@@ -98,6 +100,37 @@ class SecondViewController: UIViewController {
                        completion: nil) // 4.d. Nothing in completion here
         
     }
+    
+    // MARK:- Next button
+    func setupNextButton() {
+        nextButton.backgroundColor = .white
+        nextButton.setTitle("NEXT", for: .normal)
+        nextButton.setTitleColor(.red, for: .normal)
+        nextButton.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
+        view.addSubview(nextButton)
+        setNextButtonConstraints()
+    }
+    
+    
+    func setNextButtonConstraints() {
+        nextButton.translatesAutoresizingMaskIntoConstraints = false
+        nextButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        nextButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        nextButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        nextButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    }
+    
+    
+    
+    @objc func nextButtonTapped() {
+        
+        let thirdViewController = ThirdViewController()
+        thirdViewController.title = "TableView"
+        navigationController?.pushViewController(thirdViewController, animated: true)
+ 
+    }
+    
+    
 }
 
 
