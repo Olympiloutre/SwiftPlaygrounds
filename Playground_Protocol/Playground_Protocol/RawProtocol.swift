@@ -5,6 +5,7 @@
 //  Created by Romuald Brochard on 29/11/2018.
 //  Copyright © 2018 Romuald Brochard. All rights reserved.
 //
+/// Essentially from : https://docs.swift.org/swift-book/LanguageGuide/Protocols.html
 
 import Foundation
 
