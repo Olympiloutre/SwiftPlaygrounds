@@ -9,6 +9,11 @@
  
 .                        Playground on Protocols
  
+ 
+ Sources :
+ - https://docs.swift.org/swift-book/LanguageGuide/Protocols.html
+ - BArtenderMacApp
+ 
  */
 
 import UIKit
@@ -21,8 +26,36 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupCustomViewt()
+        mainForRawProtocol()
     }
-
+    
+    
+    // MARK:- RAW PROTOCOL EXAMPLES
+    func mainForRawProtocol() {
+        let human = Human(birthDate: 1991, firstName: "Romu", lastName: "Mu")
+        let dog = Dog(age: 7, name: "Tical")
+        let insect = Insect(age: 1)
+        
+        func printAge(_ living: Aged) {
+            print("\(living.age)")
+        }
+        
+        func wishBirthday(_ living: Aged & Named){
+            print("Happy birthday \(living.name) for your \(living.age) birthday")
+        }
+        
+        printAge(human)
+        printAge(dog)
+        printAge(insect)
+        
+        wishBirthday(human)
+        wishBirthday(dog)
+        // wishBirthday(insect) // ERROR - Because insect is not `NAmed` but only `Aged`
+        
+    }
+    
+    
+    // MARK:- DELEGATION EXAMPLE
     func setupCustomViewt() {
         
         // (has begun in CustomView.swift)
@@ -51,6 +84,7 @@ extension ViewController: CustomViewDelegate {
         
         /// everything in here will be called when `delegate?.actionOnClickLabel()` is called in `customView`
         /// This also allows us to access `ViewController` properties : e.g. view
+        /// This is mainly used to implement actions in current Viewcontroller (or class) on actions of a class defined elsewhere
         view.backgroundColor = .black
     }
 }

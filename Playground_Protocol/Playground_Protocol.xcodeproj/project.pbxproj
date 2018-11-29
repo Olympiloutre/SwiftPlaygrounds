@@ -13,6 +13,7 @@
 		8D719FD821B0775900243C31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D719FD721B0775900243C31 /* Assets.xcassets */; };
 		8D719FDB21B0775900243C31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D719FD921B0775900243C31 /* LaunchScreen.storyboard */; };
 		8D719FE521B079D500243C31 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D719FE421B079D500243C31 /* CustomView.swift */; };
+		8D719FE921B081FA00243C31 /* RawProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D719FE821B081FA00243C31 /* RawProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8D719FDA21B0775900243C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D719FDC21B0775900243C31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D719FE421B079D500243C31 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		8D719FE821B081FA00243C31 /* RawProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				8D719FCD21B0775700243C31 /* AppDelegate.swift */,
 				8D719FCF21B0775700243C31 /* ViewController.swift */,
 				8D719FE421B079D500243C31 /* CustomView.swift */,
+				8D719FE821B081FA00243C31 /* RawProtocol.swift */,
 				8D719FD721B0775900243C31 /* Assets.xcassets */,
 				8D719FD921B0775900243C31 /* LaunchScreen.storyboard */,
 				8D719FDC21B0775900243C31 /* Info.plist */,
@@ -139,6 +142,7 @@
 			files = (
 				8D719FD021B0775700243C31 /* ViewController.swift in Sources */,
 				8D719FE521B079D500243C31 /* CustomView.swift in Sources */,
+				8D719FE921B081FA00243C31 /* RawProtocol.swift in Sources */,
 				8D719FD621B0775800243C31 /* Playground_Protocol.xcdatamodeld in Sources */,
 				8D719FCE21B0775700243C31 /* AppDelegate.swift in Sources */,
 			);
