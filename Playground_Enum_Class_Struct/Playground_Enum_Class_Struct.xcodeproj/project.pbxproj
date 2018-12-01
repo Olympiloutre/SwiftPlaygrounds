@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8DCCF09F21B2AE8A00087C59 /* ExempleOptionalsVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCCF09E21B2AE8A00087C59 /* ExempleOptionalsVar.swift */; };
 		C70CD9A020DBD39C00B741B9 /* ExampleEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CD99F20DBD39C00B741B9 /* ExampleEnums.swift */; };
 		C7783D0F20D3E20A00A68853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7783D0E20D3E20A00A68853 /* AppDelegate.swift */; };
 		C7783D1120D3E20A00A68853 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7783D1020D3E20A00A68853 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8DCCF09E21B2AE8A00087C59 /* ExempleOptionalsVar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExempleOptionalsVar.swift; sourceTree = "<group>"; };
 		C70CD99F20DBD39C00B741B9 /* ExampleEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleEnums.swift; sourceTree = "<group>"; };
 		C7783D0B20D3E20A00A68853 /* Playground_Enum_Class_Struct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground_Enum_Class_Struct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7783D0E20D3E20A00A68853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				C79A33CF20DBEFFB00D5E38F /* ExampleStruct.swift */,
 				C79A33D120DBF00500D5E38F /* ExampleClass.swift */,
 				C7D4C1472133F0B400BC5967 /* ExampleConvenienceInit.swift */,
+				8DCCF09E21B2AE8A00087C59 /* ExempleOptionalsVar.swift */,
 				C7783D1220D3E20A00A68853 /* Main.storyboard */,
 				C7783D1520D3E21F00A68853 /* Assets.xcassets */,
 				C7783D1720D3E21F00A68853 /* LaunchScreen.storyboard */,
@@ -153,6 +156,7 @@
 				C79A33D020DBEFFB00D5E38F /* ExampleStruct.swift in Sources */,
 				C7D4C1482133F0B400BC5967 /* ExampleConvenienceInit.swift in Sources */,
 				C79A33D220DBF00500D5E38F /* ExampleClass.swift in Sources */,
+				8DCCF09F21B2AE8A00087C59 /* ExempleOptionalsVar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
