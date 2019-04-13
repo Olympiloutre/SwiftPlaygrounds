@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Playground_Dependency_Injection_Test/Playground_Dependency_Injection_Test.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Playground_KeyChain/Playground_Dependency_Injection_Basis/Playground_Dependency_Injection_Basis.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Playground_KeyChain/Playground_KeyChain.xcodeproj">
    </FileRef>
    <FileRef
