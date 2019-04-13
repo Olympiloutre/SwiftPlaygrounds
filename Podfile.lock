@@ -1,16 +1,20 @@
 PODS:
   - lottie-ios (2.5.0)
+  - SwiftKeychainWrapper (3.0.1)
 
 DEPENDENCIES:
   - lottie-ios
+  - SwiftKeychainWrapper
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - lottie-ios
+    - SwiftKeychainWrapper
 
 SPEC CHECKSUMS:
   lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
+  SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
 
-PODFILE CHECKSUM: 778a79e97babaf0d5027ed1a68aa10b90c22fa2f
+PODFILE CHECKSUM: 3b02968b030e8094222540aaa70801d2e08907dc
 
 COCOAPODS: 1.5.3

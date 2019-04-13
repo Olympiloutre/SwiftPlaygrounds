@@ -25,8 +25,14 @@ use_frameworks!
 
 workspace 'PlaygroundsWorkspace'
 project 'Playground_Graphics/Playground_Graphics.xcodeproj'
+project 'Playground_KeyChain/Playground_KeyChain.xcodeproj'
 
 target 'Playground_Graphics' do
 	project 'Playground_Graphics/Playground_Graphics.xcodeproj'
 	pod 'lottie-ios'
+end
+
+target 'Playground_KeyChain' do
+    project 'Playground_KeyChain/Playground_KeyChain.xcodeproj'
+    pod 'SwiftKeychainWrapper'
 end
