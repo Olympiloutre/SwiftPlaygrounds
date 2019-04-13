@@ -7,7 +7,7 @@
 //
 // From :
 // - https://medium.com/xcblog/painless-json-parsing-with-swift-codable-2c0beaeb21c1
-// - https://benscheirman.com/2017/06/swift-json/
+// - https://benscheirman.com/2017/06/swift-json/ // more complex ! Ultimate guide
 
 import UIKit
 
