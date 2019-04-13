@@ -4,15 +4,10 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Playground_Error_Handling.xcscheme</key>
+		<key>Playground_JSON_decode.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>9</integer>
-		</dict>
-		<key>Playground_Error_Handling.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>15</integer>
 		</dict>
 	</dict>
 </dict>

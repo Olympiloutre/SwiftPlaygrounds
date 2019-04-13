@@ -267,6 +267,63 @@ class ViewController: UIViewController {
         
         
         
+        
+        
+        
+        /* ... Test made on march 13 2019:
+        
+         
+         A simple App with 2 view, on the second one we have a button to go back and an async cal that changes the label text. ( there is also a print in deinit() )
+         
+         
+         ### 1 - nothing
+ 
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5.0, execute: {
+                print("delay")
+                self.label.text = "delay"
+            })
+        }
+         
+         
+         > click back - return 1rst VC
+         > ...5 sec...
+         > delay
+         > deinit
+         
+         
+         ###2 - weak
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5.0, execute: { [weak self] in
+                self?.label.text = "delay"
+            })
+        }
+         
+         > click back - return 1rst VC
+         > deinit
+         > ...5 sec...
+         > delay - print(self) => nil
+         
+         
+         
+        ###2 - unowned
+         
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5.0, execute: { [unowned self] in
+                self.label.text = "delay"
+            })
+        }
+ 
+         > click back - return 1rst VC
+         > deinit
+         > ...5 sec...
+         > FATAL ERROR - TRYING TO ACCESS A NIL VALUE
+         "So only use unowned when you are positive that variable will always be around while the closure is around"
+         */
     }
     
 }

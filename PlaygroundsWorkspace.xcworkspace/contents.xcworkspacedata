@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Playground_JSON_decode/Playground_JSON_decode.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Playground_Life_Cycle/Playground_Life_Cycle.xcodeproj">
    </FileRef>
    <FileRef
