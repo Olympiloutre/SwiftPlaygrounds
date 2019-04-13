@@ -14,13 +14,14 @@ import Foundation
 struct MyGitHub: Codable { // 1 - Codable protocol is the one that helps for encode/decode
     
     // 2 - we won't use every entry there
-    let name: String?
-    let location: String?
-    let followers: Int?
-    let avatarUrl: URL?  // 3 - avatar_url is not CamelCase so we have to use CodingKeys
-    let repos: Int?      // 3 - idem
-    let creation: Date?  // 3 - idem
-    
+    let name: String
+    let location: String
+    let followers: Int
+    let avatarUrl: URL  // 3 - avatar_url is not CamelCase so we have to use CodingKeys
+    let repos: Int      // 3 - idem
+    let creation: Date  // 3 - idem
+    let missing: Int?    // a missing element in the JSON cf NOTE
+
     private enum CodingKeys: String, CodingKey {
         case name
         case location
@@ -28,10 +29,25 @@ struct MyGitHub: Codable { // 1 - Codable protocol is the one that helps for enc
         case repos = "public_repos"
         case avatarUrl = "avatar_url"
         case creation = "created_at"
+        case missing
         
     }
 }
 
+
+/*
+ 
+ Note: if the 'missing' key is not optional, the line :
+ 
+   > try decoder.decode(MyGitHub.self, from: data)
+ 
+ will THROW -> then catch and not pursue implementation
+ 
+ if set optional, the value will be nil but still the 'decode' method won't THROW
+ 
+ The same throw can occure with the date if the decodeStrategy is wront
+ 
+ */
 
 /*
  JSON :

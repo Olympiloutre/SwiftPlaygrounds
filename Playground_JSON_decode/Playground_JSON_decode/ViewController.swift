@@ -39,6 +39,7 @@ class ViewController: UIViewController {
                 print(gitData.followers)
                 print(gitData.repos)
                 print(gitData.creation)
+                print(gitData.missing)
 
             } catch let err {
                 print("Err", err)
@@ -49,7 +50,7 @@ class ViewController: UIViewController {
     
     fileprivate func createAndEncode() {
         
-        let myGit = MyGitHub.init(name: "romuald", location: "Sydney", followers: 140, avatarUrl: URL(string: "https://avatars0.githubusercontent.com/u/683799?v=4"), repos: 3, creation: Date())
+        let myGit = MyGitHub.init(name: "romuald", location: "Sydney", followers: 140, avatarUrl: URL(string: "https://avatars0.githubusercontent.com/u/683799?v=4")!, repos: 3, creation: Date(), missing: nil)
         
         let encoder = JSONEncoder()
         encoder.dateEncodingStrategy = .iso8601 // tells date format 
