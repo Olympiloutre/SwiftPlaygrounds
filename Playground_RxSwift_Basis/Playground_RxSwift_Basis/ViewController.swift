@@ -12,7 +12,7 @@
  Sources :
  - https://github.com/ReactiveX/RxSwift
  - https://rxmarbles.com/#concat
- - https://github.com/ReactiveX/RxSwift/blob/master/Documentation/GettingStarted.md
+ - ! https://github.com/ReactiveX/RxSwift/blob/master/Documentation/GettingStarted.md
  - https://medium.com/ios-os-x-development/learn-and-master-%EF%B8%8F-the-basics-of-rxswift-in-10-minutes-818ea6e0a05b
  
  
@@ -509,6 +509,80 @@ class ViewController: UIViewController {
             .map { n in
                 print("This is performed on the main scheduler")
         }.subscribe()
+        
+        
+        
+        /*
+         
+         --- 11. Own Observables ---
+         
+         with 'Observable.create' we can create our own observables
+         
+         Observable.create { observer in
+             observer.on(.next(element))
+             observer.on(.completed)
+             return Disposables.create()
+         }
+         
+         */
+        
+        // recreate Observable.just()
+        func myJust<E>(_ element: E) -> Observable<E> {
+            return Observable.create { observer in
+                observer.on(.next(element))
+                observer.on(.completed)
+                return Disposables.create()
+            }
+        }
+        
+        myJust(0) // Observable<Int> type
+            .subscribe(onNext: { n in
+                print(n)
+            })
+        
+        
+        // recreate from()
+        func myFrom<E>(_ sequence: [E]) -> Observable<E> {
+            return Observable.create { observer in
+                for element in sequence {
+                    observer.on(.next(element)) // we add the .next...
+                }
+                
+                observer.on(.completed)         // ... and the completed state
+                return Disposables.create()
+            }
+        }
+        
+        myFrom(["first", "second"]) // Observable<String>
+            .subscribe(onNext: { n in
+                print(n)
+            })
+
+        
+        
+        
+        
+        // By Hand
+        let myObs: Observable<String> = Observable.create { observer in
+            observer.on(.next("aaa"))
+            observer.on(.next("bbb"))
+            observer.on(.completed)
+            return Disposables.create()
+        }
+        myObs.subscribe() { event in
+            switch event {
+            case .next(let str):
+                print(str)
+            case .error(let err):
+                print(err)
+            case .completed:
+                print("complete")
+            }
+        }
+        
     }
 }
 
+
+
+// Once again, everything is listed here: https://github.com/ReactiveX/RxSwift/blob/master/Documentation/GettingStarted.md
