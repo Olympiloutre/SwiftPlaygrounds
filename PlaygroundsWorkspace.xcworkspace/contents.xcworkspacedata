@@ -29,9 +29,6 @@
       location = "group:Playground_Arc_Memory_Management/Playground_Arc_Memory_Management.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Playground_Arc_Memory_Management/../Playground_Embedded_Segue/Playground_Embedded_Segue.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Playground_Equatables/Playground_Equatables.xcodeproj">
    </FileRef>
    <FileRef
@@ -57,9 +54,6 @@
    </FileRef>
    <FileRef
       location = "group:Playground_Assets/Playground_Assets.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Playground_Assets/../Pods/Pods.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
