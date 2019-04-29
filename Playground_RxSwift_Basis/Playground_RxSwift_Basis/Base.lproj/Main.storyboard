@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Playground_RxSwift_Basis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbt-Xw-dPf">
+                                <rect key="frame" x="191" y="433" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="Ozk-QW-ZZE" kind="show" id="fkJ-74-cxw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="21"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="3Fm-Of-dLs">
+            <objects>
+                <viewController id="Ozk-QW-ZZE" customClass="SecondViewController" customModule="Playground_RxSwift_Basis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RGg-wD-bwY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OkG-ro-qC4">
+                                <rect key="frame" x="41.5" y="438" width="331" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7W-8M-7ur">
+                                <rect key="frame" x="184" y="528" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OkG-ro-qC4" firstAttribute="centerY" secondItem="xcR-DJ-tGy" secondAttribute="centerY" id="8Ry-bs-CXs"/>
+                            <constraint firstItem="OkG-ro-qC4" firstAttribute="width" secondItem="RGg-wD-bwY" secondAttribute="width" multiplier="0.8" id="EHd-Fp-yoq"/>
+                            <constraint firstItem="H7W-8M-7ur" firstAttribute="top" secondItem="OkG-ro-qC4" secondAttribute="bottom" constant="60" id="fDb-tT-5le"/>
+                            <constraint firstItem="OkG-ro-qC4" firstAttribute="centerX" secondItem="xcR-DJ-tGy" secondAttribute="centerX" id="fnt-Kq-KJK"/>
+                            <constraint firstItem="H7W-8M-7ur" firstAttribute="centerX" secondItem="xcR-DJ-tGy" secondAttribute="centerX" id="zyR-Gv-6jM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xcR-DJ-tGy"/>
+                    </view>
+                    <connections>
+                        <outlet property="myButton" destination="H7W-8M-7ur" id="jxG-4S-1Ea"/>
+                        <outlet property="myTextField" destination="OkG-ro-qC4" id="hsG-x1-DTx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a1l-jD-kAH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942.02898550724649" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+</document>

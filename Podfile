@@ -26,6 +26,7 @@ use_frameworks!
 workspace 'PlaygroundsWorkspace'
 project 'Playground_Graphics/Playground_Graphics.xcodeproj'
 project 'Playground_KeyChain/Playground_KeyChain.xcodeproj'
+project 'Playground_RxSwift_Basis/Playground_RxSwift_Basis.xcodeproj'
 
 target 'Playground_Graphics' do
 	project 'Playground_Graphics/Playground_Graphics.xcodeproj'
@@ -35,4 +36,10 @@ end
 target 'Playground_KeyChain' do
     project 'Playground_KeyChain/Playground_KeyChain.xcodeproj'
     pod 'SwiftKeychainWrapper'
+end
+
+target 'Playground_RxSwift_Basis' do
+    project 'Playground_RxSwift_Basis/Playground_RxSwift_Basis.xcodeproj'
+    pod 'RxSwift'
+    pod 'RxCocoa'
 end

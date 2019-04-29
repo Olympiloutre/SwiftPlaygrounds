@@ -1,20 +1,29 @@
 PODS:
   - lottie-ios (2.5.0)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxSwift (4.5.0)
   - SwiftKeychainWrapper (3.0.1)
 
 DEPENDENCIES:
   - lottie-ios
+  - RxCocoa
+  - RxSwift
   - SwiftKeychainWrapper
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - lottie-ios
+    - RxCocoa
+    - RxSwift
     - SwiftKeychainWrapper
 
 SPEC CHECKSUMS:
   lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
 
-PODFILE CHECKSUM: 3b02968b030e8094222540aaa70801d2e08907dc
+PODFILE CHECKSUM: 3cc0cf4ad060e1f74ec9f83a54d20149583b0674
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1
