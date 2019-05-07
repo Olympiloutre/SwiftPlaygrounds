@@ -213,3 +213,102 @@ But when there are multiplie protocols, and that some functions requires more pr
     // wishBirthday(insect) // ERROR - Because insect is not `NAmed` but only `Aged`
 
 */
+
+
+
+
+// MARK:- PROTOCOL WITH DEFAULT VALUES
+/// - https://medium.com/@xcadaverx/default-protocol-extension-caveats-88c6ece27fdb
+
+// Protocol with requirements
+protocol Foo {
+    
+    var num: Int { get }
+    
+    func bar()
+}
+
+// Default implementation has to be put in an 'extension'
+extension Foo {
+    
+    var num: Int { return 1 }   // default value for var
+    
+    func bar() {                // default value for methos
+        print("Foo.bar()")
+    }
+}
+
+// We do not have implement - no error
+class SomeFoo: Foo {}
+
+// But we can
+class SomeFooBis: Foo {
+    var num: Int { return 2 }
+    
+    func bar() {
+        print("FooBis.bar()")
+    }
+}
+
+/*
+ USAGE :
+ 
+ let someFoo = SomeFoo()
+ print(someFoo.num)
+        > 1
+ someFoo.bar()
+        > "Foo.bar()"
+ 
+ 
+ 
+ let someFooBis = SomeFooBis()
+ print(someFooBis.num)
+        > 2
+ someFooBis.bar()
+        > "FooBis.bar()"
+ 
+ 
+ */
+
+
+
+// MARK:- PROTOCOL WITH GENERIG : TYPEALIAS
+/// https://www.hackingwithswift.com/example-code/language/what-is-a-protocol-associated-type
+
+protocol ItemStoring {
+    associatedtype DataType         // Act as a generic for the type on 'items' array
+    
+    var items: [DataType] { get set} // generic type
+    mutating func add(item: DataType)
+    // reminder: mutating because it modifies variables of a Value Type Instance ( Struct )
+}
+
+/// default value for add method - takes the 'DataType'
+extension ItemStoring {
+    mutating func add(item: DataType) {
+        items.append(item)
+    }
+}
+
+// Conformance...
+struct NameDatabase: ItemStoring {
+
+    var items = [String]()      // Hence we define the item as 'String' type, the 'DataType' becomes of type 'String' ...
+    mutating func add(item: String) {    // ... and the 'add' function signature requires the 'String' type ( even autocompletion knows it)
+        items.append(item)
+    }
+}
+
+/*
+ 
+ "Swift is smart enough to realize that String is being used to fill the hole in the associated type, because the items array must be whatever DataType is."
+ 
+ Note : This works exactly as Generics but for protocoles.
+ 
+    USAGE :
+ 
+         var names = NameDatabase()
+         names.add(item: "James")
+         names.add(item: "Jess")
+ 
+ */
