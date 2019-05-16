@@ -1,11 +1,9 @@
 //
-//  AppDelegate.swift
-//  Playground_RxSwift_Basis
+// AppDelegate.swift 
 //
-//  Created by Romuald Brochard on 29/4/19.
-//  Copyright © 2019 Romuald Brochard. All rights reserved.
-//
-// Note: C.f. MVVM_RxSwift project on my git
+// Created by Qantas Dev on 16/5/19
+// Copyright © 2019 Romuald Brochard. All rights reserved.
+// 
 
 import UIKit
 
