@@ -200,6 +200,8 @@ But when there are multiplie protocols, and that some functions requires more pr
         print("\(living.age)")
     }
 
+ Even with multiple conformances
+ 
     func wishBirthday(_ living: Aged & Named){
         print("Happy birthday \(living.name) for your \(living.age) birthday")
     }
