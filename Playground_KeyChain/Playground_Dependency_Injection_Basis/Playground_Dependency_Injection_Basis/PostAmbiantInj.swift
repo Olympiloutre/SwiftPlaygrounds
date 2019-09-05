@@ -32,7 +32,6 @@ class PostAmbiantInj: Encodable {
         return try Post.encoder.encode(self)
     }
     
-    
     private static var _encoder: Encoder = PropertyListEncoder()
     
     static func setEncoder(_ encoder: Encoder) {
