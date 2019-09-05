@@ -19,26 +19,19 @@ class PWDViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
     @IBAction func clickSavePwd(_ sender: Any) {
         
         if let pwd = pwdTextField.text {
-            
             let saveSuccess = KeychainWrapper.standard.set(pwd, forKey: "secure_password")
             print("save success: \(saveSuccess)")
             self.view.endEditing(true)
-            
         }
-        
     }
-    
     
     @IBAction func clickRetrievePwd(_ sender: Any) {
         
         guard let retrievedPassword = KeychainWrapper.standard.string(forKey: "secure_password") else { return }
         print("Retrieved passwork is: \(retrievedPassword)")
-        
     }
-    
 }
 

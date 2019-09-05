@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Playground_Scalable_API_Client/Playground_Scalable_API_Client.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Playground_UIView_from_xib/Playground_UIView_from_xib.xcodeproj">
    </FileRef>
    <FileRef
