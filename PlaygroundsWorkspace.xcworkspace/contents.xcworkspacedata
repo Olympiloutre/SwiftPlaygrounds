@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Git Rebase.rtf">
+   </FileRef>
+   <FileRef
+      location = "group:README.markdown">
+   </FileRef>
+   <FileRef
       location = "group:Playground_SOLID/Playground_SOLID.xcodeproj">
    </FileRef>
    <FileRef
