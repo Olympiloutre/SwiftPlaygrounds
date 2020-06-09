@@ -14,6 +14,8 @@
  
     "Dependency injection means giving an object its instance variables. Really. That's it."
  
+ This is done via PROTOCOL.
+ e.g. You define a variable as a protocol `var service: MyService` where MyService is a protocol
  
  On this playground we will youse the ENCODE protocol
  

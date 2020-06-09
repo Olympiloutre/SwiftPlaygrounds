@@ -12,7 +12,11 @@
 		<key>Playground_Generics.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>8</integer>
+=======
+			<integer>23</integer>
+>>>>>>> 7ea800669c055c270968f89a37ca56de47d70439
 		</dict>
 	</dict>
 </dict>

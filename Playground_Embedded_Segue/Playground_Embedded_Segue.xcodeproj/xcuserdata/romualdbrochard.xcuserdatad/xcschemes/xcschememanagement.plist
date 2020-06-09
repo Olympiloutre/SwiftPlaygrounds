@@ -12,7 +12,11 @@
 		<key>Playground_Embedded_Segue.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>12</integer>
+=======
+			<integer>20</integer>
+>>>>>>> 7ea800669c055c270968f89a37ca56de47d70439
 		</dict>
 	</dict>
 </dict>

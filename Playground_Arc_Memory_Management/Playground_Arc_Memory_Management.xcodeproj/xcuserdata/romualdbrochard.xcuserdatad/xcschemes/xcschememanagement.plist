@@ -12,7 +12,11 @@
 		<key>Playground_Arc_Memory_Management.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>7</integer>
+=======
+			<integer>17</integer>
+>>>>>>> 7ea800669c055c270968f89a37ca56de47d70439
 		</dict>
 	</dict>
 </dict>

@@ -30,8 +30,6 @@ class PostConstructor: Encodable {
         case content
     }
     
-    
-    
     private var encoder: Encoder // 1 - not optional - set during init (constructor)
     
     init(title: String, content: String, encoder: Encoder) { // 2 - injecting the dependency ( encoder ) in init
@@ -43,8 +41,6 @@ class PostConstructor: Encodable {
     func encoded() throws -> Data {
         return try self.encoder.encode(self) // 3 - using here
     }
-    
-    
 }
 
 /* 

@@ -2,10 +2,17 @@
 <Workspace
    version = "1.0">
    <FileRef
+<<<<<<< HEAD
       location = "group:Git Rebase.rtf">
    </FileRef>
    <FileRef
       location = "group:README.markdown">
+=======
+      location = "group:Playground_Scalable_API_Client/Playground_Scalable_API_Client.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Playground_UIView_from_xib/Playground_UIView_from_xib.xcodeproj">
+>>>>>>> 7ea800669c055c270968f89a37ca56de47d70439
    </FileRef>
    <FileRef
       location = "group:Playground_SOLID/Playground_SOLID.xcodeproj">

@@ -12,7 +12,11 @@
 		<key>Playground_Protocol.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>10</integer>
+=======
+			<integer>16</integer>
+>>>>>>> 7ea800669c055c270968f89a37ca56de47d70439
 		</dict>
 	</dict>
 </dict>
