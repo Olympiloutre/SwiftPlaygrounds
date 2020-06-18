@@ -4,19 +4,10 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Playground_Protocol.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
 		<key>Playground_Protocol.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-<<<<<<< HEAD
-			<integer>10</integer>
-=======
-			<integer>16</integer>
->>>>>>> 7ea800669c055c270968f89a37ca56de47d70439
+			<integer>13</integer>
 		</dict>
 	</dict>
 </dict>
